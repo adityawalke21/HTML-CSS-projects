@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 70vw;
+    height: 150vh;
+    margin: auto;
+    background-image: url(images/bg.gif);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+header {
+    height: 11%;
+    background-image: url(images/header_bg.gif);
+    padding-top: 1.5rem;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    height: 4%;
+    background-image: url(images/menu_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    padding: 0.8rem 0 0 2rem;
+    position: relative;
+    
+}
+
+nav ul li img {
+    position: absolute;
+    top: 42px;
+    left: 46px;
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav a:hover + nav ul li img{
+    display: none;
+}
+
+
+/* section */
+section {
+    width: 100%;
+    height: 73%;
+    background-color:rgb(220, 218, 216);
+    padding: 2rem 1.5rem 3rem 1.5rem;
+}
+
+section .main{
+    display: flex;
+}
+
+.left {
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+section #free-word {
+    color: rgb(188, 96, 16);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+section #hosting-word{
+    font-size: 23px;
+    color: #2b81a4;
+    padding-left: 0.5rem;
+}
+
+section .readmore-box{
+    background-image: url(images/welcome_box.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    padding: 2rem 1.5rem 0 2rem;
+    position: relative;
+}
+
+.readmore-box h2{
+    color: rgb(188, 96, 16);
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.readmore-box img {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 26.6rem;
+        width: 7rem;
+    }
+.readmore-button-text{
+        position: absolute;
+        bottom: 3rem;
+        left: 28.3rem;
+        color: white;
+}
+
+/* left center */
+
+.left-center{
+    padding: 2rem 0.5rem 1.5rem 1.5rem;
+}
+
+.left-center h3{
+    margin-bottom: 1rem;
+    
+}
+
+.left-center p{
+    font-size: 15px;
+    margin: 4px 0 4px 4px ;
+}
+
+.numbers{
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.left-center img{
+    position: absolute;
+    left: 16.2rem;
+}
+
+.left-bottom {
+    padding: 2rem 0.5rem 1.5rem 1.5rem;
+
+}
+
+.left-bottom h3{
+    margin-bottom: 1rem;
+}
+
+.news{
+    display: flex;
+    border-bottom: 1.5px dashed gray;
+    margin-right: 1rem;
+}
+
+.news-img{
+    padding-top:10px ;
+    padding-right: 8px;
+}
+
+.news-text{
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* right-section */
+
+.right-top img{
+    height: 50%;
+    margin: auto;
+    margin: 0 0 0 110px;
+}
+
+.right-center{
+    height: 25%;
+    border: 1.5px solid gray;
+    border-radius: 8px;
+    margin-top: 40px ;
+    background-color: #d6c8b5;
+}
+
+.right-center p{
+    font-size: 20px;
+    font-weight: 650;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-top: 13px;
+}
+
+button {
+    background-image: url(images/login.gif);
+    width: 94px;
+    height: 27px;
+    background-repeat: no-repeat;
+    border: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    margin-left: 260px;
+    background-size: cover;
+}
+
+.right-bottom{
+    height: 25%;
+    margin-top: 40px;
+   
+}
+
+.right-bottom h3{
+    margin-bottom: 20px;
+}
+
+.right-center input {
+    margin-bottom: 20px;
+}
+.right-center label{
+    margin-left: 60px;
+    text-align: right;
+    width: 80px;
+    display: inline-block;
+}
+
+.testimonial-box{
+    border: 1.5px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #d6c8b5;
+}
+
+.testimonial-box p:last-child{
+  font-style: italic;
+  font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+padding-right: 25px;
+padding-top: 15px;
+}
+footer nav {
+   background: none;
+}

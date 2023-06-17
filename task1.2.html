@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        header {
+            height: 30vh;
+            padding-top: 105px;
+            background-image: linear-gradient(yellow,green);
+        }
+
+        .section-area {
+            height: 40vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        section:first-child{
+            background-color: red;
+        }
+        section:nth-child(2){
+            background-color: yellow;
+        }
+        section:nth-child(3){
+            background-color: blue;
+        }
+
+        section {
+            padding-top: 140px;
+        }
+        footer {
+            height: 30vh;
+            padding-top: 105px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="section-area">
+        <section class="left-section">Left section</section>
+        <section class="middle-section">Middle section</section>
+        <section class="right-section">Right section </section>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>

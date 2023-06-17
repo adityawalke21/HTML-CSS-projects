@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 70vw;
+            height: 250vh;
+            margin: auto;
+            padding: 2rem;
+            border: 2rem solid lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        label {
+            display: inline-block;
+            width: 25%;
+            text-align: right;
+            padding:0.5rem 0.5rem 0.5rem;
+            vertical-align: top;
+        }
+        input {
+            width: 30%;
+            /* border: 1.5px solid lightgray ; */
+            box-shadow: 2px 2px 2px gray;
+            height: 1.5rem;
+            border: none;
+            background-color: rgb(234, 232, 232);
+            border-radius: 4px;
+            margin: 0.5rem;
+            padding: 0 1rem;
+        }
+
+        p {
+            width: 25%;
+            text-align: right;
+            background-color: rgb(99, 122, 53);
+            color: white;
+            padding: 0.5rem 0.5rem;
+
+        }
+
+        .right {
+            text-align: left;
+            width: 4%;
+            margin-right: 20px;
+            padding: 0;
+        }
+        input[type="radio"] {
+           width: 5%;
+           margin: 0;
+           padding: 0;
+        }
+        .fourth-section{
+            display: flex;
+            width: 100%;
+        }
+        .fourth-section div:nth-child(1){
+             width: 25%;
+        }
+        .fourth-section p{
+            width: 100%;
+        }
+        .fourth-section label {
+            text-align: left;
+            width: 90%;
+        }
+        
+        .fourth-section input {
+           vertical-align: top;
+        }
+        #address{
+            margin-left: 14.5rem;
+        }
+        select {
+            margin-left: 10px;
+            width: 30%;
+            /* border: 1.5px solid lightgray ; */
+            box-shadow: 2px 2px 2px gray;
+            height: 1.5rem;
+            border: none;
+            background-color: rgb(234, 232, 232);
+            border-radius: 4px;
+            padding: 0 1rem;
+        }
+        .ph1,.ph2 {
+            width: 60px;
+        }
+        .ph3{
+            width: 100px;
+        }
+        #years,#months{
+            width: 4rem;
+        }
+        #current-preferred-industry{
+             height:6rem;
+
+        }
+        option {
+         font-size: 1rem;
+        }
+        .current{
+            vertical-align: top;
+        }
+        #Function{
+            height: 6rem;
+            margin-top: 1rem;
+
+        }
+        .email-sub{
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .email-div{
+            width: 100%;
+            padding-left:0.5rem ;
+        }
+        #products, #offers, #sms{
+            width: 5%;
+        }
+        .email-div label {
+            width: 70%;
+        } 
+        .email-para p{
+            width: 224px;
+        }
+        input[type="submit"]{
+            margin-left: 237px;
+            color: white;
+            background-color: orange;
+            width: 200px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="first-section">
+            <fieldset>
+                <p> Get started with Monster</p>
+                <label for="email"> <span>*</span> Email address:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="first-name"><span>*</span> First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <br>
+                <label for="last-name"> Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+                <br>
+                <label for="user-name"> <span>*</span> Desired username:</label>
+                <input type="text" id="user-name" name="user-name" required>
+                <br>
+                <label for="password"> <span>*</span> Choose a password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="password"> <span>*</span> Re-enter password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+        </div>
+
+        <div class="second-section">
+            <fieldset>
+                <p>Personal Details</p>
+                <label for="location"> <span>*</span> Current Location:</label>
+                <select name="location" id="location">
+                    <option value="mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Banglore">Banglore</option>
+                </select>
+                <br>
+                <input type="address" id="address" name="address">
+                <br>
+                <label for="mobile-number"> Mobile Number:</label>
+                <input type="tel" value="+91-" id="mobile-number" name="mobile-number">
+                <br>
+                <label for="phone-number"> Phone Number:</label>
+                <input type="tel" class="ph1" id="phone-number" name="phone-number" maxlength="3" value="91">
+                <span>-</span>
+                <input type="tel" class="ph2" id="phone-number" name="phone-number" maxlength="6">
+                <span>-</span>
+                <input type="tel" class="ph3" id="phone-number" name="phone-number" maxlength="6">
+                <br>
+                <label for="job-location"> <span>*</span> Preffered Job Location:</label>
+                <select name="job-location" id="job-location" required>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Nagpur">Nagpur</option>
+                </select>
+                <br>
+                <label for="nationality"> <span>*</span> Nationality:</label>
+                <select name="nationality" id="nationality" required>
+                    <option value="India">India</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Bangladesh">Bangladesh</option>
+
+                </select>
+                <br>
+                <label for="gender"> <span>*</span> Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" class="right">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female" class="right">Female</label>
+            </fieldset>
+        </div>
+        <div class="third-section">
+            <fieldset>
+                <p>Professional Details</p>
+                <label for="experience">Total Experience:</label>
+                <select name="years" id="years" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="years" class="right">Years</label>
+                <select name="months" id="months" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="months" class="right">Months</label>
+                <br>
+                <label class="current" for="current/preferred-industry">Current / Preferred Industry:</label>
+                <select name="current/preferred-industry" id="current-preferred-industry" size="6" required>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Hospitality">Hospitality</option>
+                </select>
+                <br>
+                <label for="Function">Function:</label>
+                <select name="Function" id="Function" size="6" required>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Human resource">Human resource</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing and communication">Marketing and communication</option>
+                </select>
+                <br>
+                <label for="keyskills">Keyskills:</label>
+                <input type="text" id="keyskills" name="keyskills">
+            </fieldset>
+        </div>
+        <fieldset>
+            <div class="fourth-section">
+                <div class="email-para">
+                    <p>Email Subscriptions</p>
+                </div>
+                <div class="email-div">
+                <label class="email-sub" for="email-sub">Emails you would like to receive</label>
+                <br>
+                <input type="checkbox" name="" id="products">
+                <label for="products">Monsters Productsa & newsletters</label>
+                <br>
+                <input type="checkbox" name="" id="offers">
+                <label for="">Offers & Promotions from leading companies</label>
+                <br>
+                <input type="checkbox" id="sms">
+                <label for="sms">Receive matching jobs through SMS</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
